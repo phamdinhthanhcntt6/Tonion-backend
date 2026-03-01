@@ -1,0 +1,19 @@
+{
+  "compilerOptions": {
+    "target": "ES2022" /* Phiên bản JS đầu ra */,
+    "module": "CommonJS" /* Hệ thống module cho Node.js */,
+    "lib": ["ES2022"] /* Thư viện hỗ trợ */,
+    "outDir": "./dist" /* Thư mục chứa code JS sau khi build */,
+    "rootDir": "./src" /* Thư mục chứa code TS gốc */,
+    "strict": true /* Bật kiểm tra kiểu nghiêm ngặt */,
+    "esModuleInterop": true /* Hỗ trợ import các thư viện cũ */,
+    "skipLibCheck": true /* Bỏ qua kiểm tra các file .d.ts của thư viện */,
+    "forceConsistentCasingInFileNames": true,
+    "baseUrl": "." /* Đường dẫn gốc để resolve module */,
+    "paths": {
+      "@/*": ["src/*"] /* Alias giúp bạn import gọn hơn (vd: @/services/...) */
+    }
+  },
+  "include": ["src/**/*"] /* Chỉ biên dịch code trong folder src */,
+  "exclude": ["node_modules"] /* Loại bỏ node_modules khi biên dịch */
+}
