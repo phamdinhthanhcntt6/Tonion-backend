@@ -12,8 +12,12 @@
     "baseUrl": "." /* Đường dẫn gốc để resolve module */,
     "paths": {
       "@/*": ["src/*"] /* Alias giúp bạn import gọn hơn (vd: @/services/...) */
-    }
+    },
+    "types": ["node"]
   },
-  "include": ["src/**/*"] /* Chỉ biên dịch code trong folder src */,
+  "include": [
+    "src/**/*",
+    "src/server.ts"
+  ] /* Chỉ biên dịch code trong folder src */,
   "exclude": ["node_modules"] /* Loại bỏ node_modules khi biên dịch */
 }
