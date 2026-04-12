@@ -23,7 +23,6 @@ const authMiddleware = async (
     const publicKey = process.env.SUPABASE_PUBLIC_KEY;
 
     if (!publicKey) {
-      console.error("❌ CRITICAL: SUPABASE_PUBLIC_KEY is not defined in .env");
       return res.status(500).json({ error: "Internal Server Error" });
     }
 
